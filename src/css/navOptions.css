@@ -1,0 +1,187 @@
+/* this contains the responsive code for the navbar and 'more' dropdown menu - the position of options is responsive to screen width */
+
+.nav-section.option {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 320px) {
+.nav-section.option.Home {
+  display: flex;
+}
+.subnav-option-ind.Home {
+  display: none;
+}
+.subnav-option-ind.News {
+  margin-left: 50%;
+}
+
+}
+
+@media screen and (min-width: 375px) {
+.nav-section.option.News {
+  display: flex;
+}
+.subnav-option-ind.News {
+  display: none;
+}
+.subnav-option-ind.Sport {
+  margin-left: 50%;
+}
+}
+
+@media screen and (min-width: 400px) {
+.subnav-option-ind.Sport {
+  margin-left: 33.3%;
+}
+}
+
+@media screen and (min-width: 445px) {
+.nav-section.option.Sport {
+  display: flex;
+}
+.subnav-option-ind.Sport {
+  display: none;
+}
+.subnav-option-ind.Weather {
+  margin-left: 33.3%;
+}
+}
+
+@media screen and (min-width: 515px) {
+.nav-section.option.Weather {
+  display: flex;
+}
+.subnav-option-ind.Weather {
+  display: none;
+}
+.subnav-option-ind.iPlayer {
+  margin-left: 33.3%;
+}
+}
+
+@media screen and (min-width: 570px) {
+.nav-section.option.iPlayer {
+  display: flex;
+}
+.subnav-option-ind.iPlayer {
+  display: none;
+}
+.subnav-option-ind.Sounds {
+  margin-left: 33.3%;
+}
+}
+
+@media screen and (min-width: 570px) {
+.nav-section.option.iPlayer {
+  display: flex;
+}
+.subnav-option-ind.iPlayer {
+  display: none;
+}
+.subnav-option-ind.Sounds {
+  margin-left: 33.3%;
+}
+}
+
+@media screen and (min-width: 600px) {
+.nav-section.option.iPlayer {
+  display: none;
+}
+.nav-section.option.Home {
+  display: none;
+}
+.subnav-option-ind.iPlayer {
+  display: inline-block;
+}
+.subnav-option-ind.iPlayer {
+  margin-left: 0%;
+}
+
+.subnav-option-ind.Sounds {
+  margin-left: 0%;
+}
+
+}
+
+@media screen and (min-width: 610px) {
+  .nav-section.option.iPlayer {
+    display: flex;
+  }
+  .subnav-option-ind.iPlayer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .nav-section.option.Sounds {
+    display: flex;
+  }
+  .subnav-option-ind.Sounds {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 745px) {
+  .nav-section.option.CBBC {
+    display: flex;
+  }
+  .subnav-option-ind.CBBC {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 825px) {
+  .nav-section.option.CBeebies {
+    display: flex;
+  }
+  .subnav-option-ind.CBeebies {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  .nav-section.option.Food {
+    display: flex;
+  }
+  .subnav-option-ind.Food {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .nav-section.option.Bitesize {
+    display: flex;
+  }
+  .subnav-option-ind.Bitesize {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .nav-section.option.CBeebies {
+    display: none;
+  }
+  .subnav-option-ind.CBeebies {
+    display: inline-block;
+  }
+  .nav-section.option.Food {
+    display: none;
+  }
+  .subnav-option-ind.Food {
+    display: inline-block;
+  }
+  .nav-section.option.Bitesize {
+    display: none;
+  }
+  .subnav-option-ind.Bitesize {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-section.option.Home {
+    display: flex;
+  }
+}

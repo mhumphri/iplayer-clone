@@ -1,0 +1,117 @@
+.footer-wrapper {
+  background-color: #fff;
+  border-top: 1px solid #949494;
+  color: #333;
+  padding: 20px 0px;
+}
+
+.footer-links-wrapper {
+  width: 100%;
+  padding: 10px 0px;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+
+.footer-links-wrapper-inner {
+  margin-left: -19px;
+}
+
+.footer-links-row {
+  display: flex;
+}
+
+.footer-links-column.final {
+  border-right: 0px;
+}
+
+.footer-link-ind {
+  display: inline-block;
+  width: 50%;
+  color: #333;
+  font: 14px "BBCFontBd", sans-serif;
+}
+
+.footer-link-ind.end {
+  margin-right: 5px;
+  background-color: yellow;
+}
+
+.footer-link-ind.middle-row {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link-ind:hover {
+  text-decoration: underline;
+}
+
+.footer-link-inner {
+  padding-top: 12px;
+  padding-right: 19px;
+  margin-left: 19px;
+  border-right: 1px solid #949494;
+}
+
+.bottom-info-link-row {
+  all: unset;
+}
+
+.bottom-info-link {
+  display: inline-block;
+  font: 13px "BBCFontRg", sans-serif;
+  margin-bottom: 10px;
+  min-width: 50%;
+}
+
+.bottom-info-link:hover {
+  text-decoration: underline;
+}
+
+.bottom-info-inner {
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.bottom-line {
+  margin-top: 5px;
+  font: 13px "BBCFontBd", sans-serif;
+}
+
+.bottom-line-text-reg {
+  font: 13px "BBCFontRg", sans-serif;
+}
+
+@media screen and (min-width: 400px) {
+  .footer-link-ind {
+    width: 33.3%;
+  }
+
+  .bottom-info-link {
+    min-width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .footer-link-ind {
+    width: 20%;
+  }
+
+  .bottom-info-inner {
+    padding-right: 19px;
+  }
+
+  .bottom-info-link {
+    min-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .footer-link-ind {
+    width: 16.66%;
+  }
+
+  .bottom-info-link {
+    min-width: auto;
+  }
+}

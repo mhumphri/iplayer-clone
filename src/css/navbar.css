@@ -1,0 +1,523 @@
+.outer-nav.main-nav {
+  background-color: #000000;
+  color: rgb(164, 164, 164);
+  border-bottom: 1px solid;
+  border-color: #333;
+  transition: background .4s;
+}
+
+.outer-nav.main-nav.inverse {
+  background-color: white;
+  color: rgb(51, 51, 51);
+  border-bottom: 1px solid;
+  border-color: #ccc;
+}
+
+.outer-nav.sub-nav {
+  background-color: white;
+  color: black;
+  max-height: 0px;
+  transition: max-height .4s;
+  overflow: hidden;
+  border-bottom: 0px;
+}
+
+.outer-nav.sub-nav.open {
+  transition: max-height .4s;
+  overflow: hidden;
+  max-height: 313px;
+}
+
+.outer-nav.search-nav {
+  background-color: #020011;
+  color: white;
+  height: 76px;
+  max-height: 0px;
+  transition: max-height .4s;
+  overflow: hidden;
+  border-bottom: 0px;
+}
+
+.outer-nav.search-nav.open {
+  transition: max-height .4s;
+  overflow: hidden;
+  max-height: 76px;
+  border-bottom: 1px solid;
+  border-color: #333;
+  margin-top: -1px;
+}
+
+.topic-row-wrapper {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  border-color: inherit;
+  color: #A4A4A4;
+}
+
+.topic-row-wrapper.inverse {
+  color: #333333;
+}
+
+.topics-wrapper {
+  height: 100%;
+  display: flex;
+  border-color: inherit;
+  color: inherit;
+}
+
+.logo-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 81px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  fill: #000;
+}
+
+.logo-wrapper.inverse {
+  fill: #FFF;
+}
+
+.logo-wrapper.large {
+  display: none;
+}
+
+.logo-svg {
+  fill: green;
+}
+
+.App-logo svg {
+  fill: green;
+}
+
+.nav-section {
+  border-left: 1px solid;
+  border-color: inherit;
+  height: 100%;
+  color: inherit;
+  font: 13px "BBCFontBd", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.nav-section.inverse {
+  border-left: 1px solid #ccc;
+}
+
+.nav-section.more {
+  flex-grow: 1;
+}
+
+.nav-section.search {
+  border-right: 1px solid;
+  border-color: inherit;
+}
+
+.inner-nav-section {
+  height: 100%;
+  width: 100%;
+  padding: 0px 8px;
+}
+
+.inner-nav-section.login {
+  display: flex;
+  min-width: auto;
+}
+
+.username {
+  margin-top: 12px;
+  margin-left: 6px;
+  width: 0px;
+  position: absolute;
+  overflow: hidden;
+  color: inherit;
+}
+
+.nav-section-content {
+  margin-top: 8px;
+}
+
+.inner-nav-section.bell {
+  position: relative;
+}
+
+.inner-nav-section:hover {
+  height: calc(100% - 4px);
+  border-bottom: 4px solid;
+}
+
+.inner-nav-section.login:hover {
+  border-color: #1188BB;
+}
+
+.inner-nav-section.bell:hover {
+  border-color: #006DEF;
+}
+
+.inner-nav-section.Home:hover {
+  border-color: #007BC7;
+}
+
+.inner-nav-section.News:hover {
+  border-color: #992211;
+}
+
+.inner-nav-section.Sport:hover {
+  border-color: #FFD230;
+}
+
+.inner-nav-section.Weather:hover {
+  border-color: #88CCEE;
+}
+
+.inner-nav-section.iPlayer:hover {
+  border-color: #FFD230;
+}
+
+.inner-nav-section.Sounds:hover {
+  border-color: #FF4900;
+}
+
+.inner-nav-section.CBBC:hover {
+  border-color: #90D200;
+}
+
+.inner-nav-section.more:hover {
+  border-color: #FFFFFF;
+}
+
+.inner-nav-section.more.open {
+  height: calc(100% - 4px);
+  border-bottom: 4px solid;
+  border-color: #262626;
+}
+
+.inner-nav-section.search {
+  display: flex;
+}
+
+.inner-nav-section.search:hover {
+  border-color: #FFFFFF;
+}
+
+.inner-nav-section.search.open:hover {
+  border-color: #262626;
+}
+
+.more-triangle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.bell-img {
+  margin-top: 8px;
+}
+
+.login-circle {
+  font-size: .8rem !important;
+  background: #006def;
+  border-radius: 50%;
+  color: #fff;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.link-triangle-1 {
+  top: 11px;
+  left: 0px;
+  z-index: 1;
+  border-top: 6px solid transparent;
+  border-left: 6px solid rgb(204, 204, 204);
+  border-bottom: 6px solid transparent;
+  position: absolute;
+  border-left-color: rgb(51, 51, 51) !important;
+}
+
+.link-triangle-1.inverse {
+  border-left-color: rgb(204, 204, 204) !important;
+}
+
+.link-triangle-2 {
+  top: 12px;
+  left: -1px;
+  position: absolute;
+  z-index: 2;
+  border-left: 5px solid white;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-left-color: rgb(0, 0, 0) !important;
+}
+
+.link-triangle-2.inverse {
+  border-left-color: white !important;
+}
+
+.search-svg {
+  margin-top: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.nav-search-text-wrapper {
+  margin-top: 12px;
+  margin-left: 8px;
+}
+
+.nav-search-text {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .logo-wrapper {
+    width: 92px;
+  }
+
+  .search-wrapper {
+    border-right: 0px;
+  }
+
+  .inner-nav-section {
+    padding: 0px 12px;
+  }
+
+  .nav-section-content {
+    margin-top: 12px;
+  }
+
+  .nav-section {
+    font: 14px "BBCFontBd", sans-serif;
+  }
+
+  .more-triangle-wrapper {
+    margin-top: 12px;
+  }
+
+  .bell-img {
+    margin-top: 12px;
+  }
+
+  .login-circle {
+    margin-top: 10px;
+  }
+
+  .search-svg {
+    margin-top: 12px;
+  }
+
+  .link-triangle-1 {
+    top: 15px;
+  }
+
+  .link-triangle-2 {
+    top: 16px;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .username {
+    position: static;
+    overflow: visible;
+    width: auto;
+  }
+
+  .inner-nav-section.login {
+    min-width: 10.93em;
+  }
+
+  .nav-search-text {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .logo-wrapper {
+    width: 100px;
+  }
+
+  .inner-nav-section {
+    padding: 0px 20px;
+  }
+
+  .inner-nav-section.bell {
+    padding: 0px 16px;
+  }
+
+  .inner-nav-section.login {
+    padding: 0px 14px;
+  }
+}
+
+/* searchnav code */
+.search-nav-wrapper {
+  height: 76px;
+  display: flex;
+}
+
+.searchnav-input-wrapper {
+  margin: 16px 0px;
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+}
+
+.searchnav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  color: black;
+  fill: black;
+}
+
+.searchnav-glass {
+  height: 22px;
+  width: 22px;
+}
+
+.searchnav-cross {
+  margin-top: 16px;
+  height: 22px;
+  width: 22px;
+  padding: 0px 12px;
+  padding-top: 10px;
+}
+
+.search-nav-title {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .search-nav-title {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    font-size: 44px;
+    font-weight: 400;
+    margin-right: 14px;
+  }
+}
+
+/* subnav code */
+.more-title {
+  position: absolute;
+  font: 28px "BBCFontRg", sans-serif;
+  padding-left: 8px;
+}
+
+.subnav-options {
+  margin-left: 0%;
+  position: relative;
+  padding-top: 8px;
+}
+
+.subnav-option-ind {
+  display: inline-block;
+  font: 13px "BBCFontBd", sans-serif;
+  width: 50%;
+}
+
+.subnav-option-ind.Home {
+  margin-left: 50%;
+}
+
+.subnav-option-ind.first {
+  margin-left: 50%;
+}
+
+.subnav-option-inner {
+  border-right: none;
+  display: block;
+  padding: .308em 8px;
+  margin: 0 10px .615em 0px;
+  line-height: 1.615em;
+  height: auto;
+  min-height: 1.615em;
+}
+
+.subnav-option-inner:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.search-svg {
+  color: black;
+}
+
+@media screen and (min-width: 400px) {
+  .subnav-option-ind {
+    width: 33.3%;
+  }
+
+  .subnav-option-ind.first {
+    margin-left: 33.3%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .subnav-options {
+    margin-left: 20%;
+  }
+
+  .more-title {
+    padding-left: 0px;
+  }
+
+  .subnav-option-inner {
+    margin-right: 0%
+  }
+
+  .logo-wrapper.large {
+    display: flex;
+  }
+
+  .logo-wrapper.small {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .outer-nav.sub-nav.open {
+    max-height: 276px;
+  }
+}
+
+@media screen and (min-width: 445px) {
+  .outer-nav.sub-nav.open {
+    max-height: 202px;
+  }
+}
+
+@media screen and (min-width: 445px) {
+  .outer-nav.sub-nav.open {
+    max-height: 165px;
+  }
+}
+
+@media screen and (min-width: 825px) {
+  .outer-nav.sub-nav.open {
+    max-height: 91px;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .subnav-option-ind {
+    width: 20%;
+  }
+
+  .subnav-options {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subnav-option-inner {
+    margin-right: 25%
+  }
+}

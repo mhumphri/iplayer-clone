@@ -1,0 +1,434 @@
+.iplayer-nav-dd-wrapper {
+  transition-property: height;
+  height: 64px;
+  transition-timing-function: ease;
+  transition-duration: .5s;
+  display: flex;
+  flex-flow: column;
+  transform: translate3d(0, 0, 0);
+  will-change: height;
+  color: #f6f6f6;
+  background-color: #141414;
+  border-bottom: 1px solid #202224;
+  overflow: hidden;
+  position: relative;
+  z-index: 352;
+}
+
+.iplayer-nav-dd-wrapper.no-transform {
+  transition-property: none;
+}
+
+.iplayer-nav-dd-item-container {
+  position: absolute;
+  border-top: 1px solid #141414;
+  background: #141414;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.iplayer-nav-dd-item-container.large {
+  display: none;
+}
+
+.large-subnav-outer {
+  position: relative;
+  height: 100%;
+}
+
+.large-subnav-inner {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .2s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+  transition-duration: .3s;
+}
+
+.large-subnav-inner.invisible {
+  opacity: 0;
+  visibility: hidden;
+  transition-property: visibility, opacity;
+  transition-timing-function: ease;
+  transition-duration: .2s;
+}
+
+.categories-mini-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.categories-wrapper {
+  padding-bottom: 7px;
+}
+
+.top-nav-wrapper {
+  background-color: #000000;
+}
+
+.inner-subnav {
+  color: white;
+  position: absolute;
+  top: 40;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: visibility, opacity;
+  transition-timing-function: ease;
+  transition-duration: .2s;
+  background-color: #141414;
+  height: 100%;
+}
+
+.inner-subnav.visible {
+  color: white;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .2s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+  transition-duration: .3s;
+}
+
+.iplayer-menu-btn {
+  font: 16px "BBCFontBd", sans-serif;
+  color: #FFFFFF;
+}
+
+.iplayer-menu-btn:hover {
+  color: #FF4C98;
+}
+
+.iplayer-logo {
+  font: 34px "BBCFontBd", sans-serif;
+  color: #FF4C98;
+  transition: color .2s ease-out;
+  height: 100%;
+}
+
+.iplayer-logo:hover {
+  color: #FFFFFF;
+}
+
+/* controls visibility of rhs menu <600px screen width */
+.rhs-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.rhs-container.large {
+  display: none;
+}
+
+.lhs-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.tv-category-text {
+  font: 14px "BBCFontRg", sans-serif;
+}
+
+.title-triangle-wrapper {
+  display: flex;
+  color: inherit;
+  border-color: inherit;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  fill: inherit;
+}
+
+.tv-category-box {
+  padding: 0px 8px;
+  color: white;
+  fill: white;
+  height: 100%;
+  transition: color .2s ease-out;
+}
+
+.arrow-svg {
+  color: inherit;
+  fill: inherit;
+  height: 6px;
+  width: 6px;
+  margin-left: 6px;
+}
+
+.tv-category-box.active {
+  background-color: #141414;
+  color: #FF4C98;
+  fill: #FF4C98;
+}
+
+.tv-category-box.rhs {
+  padding-right: 0px;
+}
+
+.tv-category-box:hover {
+  color: #FF4C98;
+}
+
+.tv-category-box:hover .arrow-svg {
+  fill: #FF4C98;
+}
+
+.tv-category-box:hover .down-triangle.iplayer-nav {
+  border-color: #FF4C98 transparent transparent transparent;
+}
+
+.subnav-option-column {
+  width: 33.33%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.subnav-option {
+  display: inline-block;
+  padding-left: 16px;
+  padding-top: 9px;
+  padding-bottom: 5px;
+  color: #fff;
+  font: 14px "BBCFontRg", sans-serif;
+}
+
+.subnav-option.horizontal {
+  padding: 0 16px;
+}
+
+.subnav-option:hover {
+  background-color: white;
+  color: black;
+}
+
+.subnav-option.horizontal:hover {
+  background-color: #141414;
+  color: #FF4C98;
+}
+
+/* scrolling nav for channels menu */
+.scroll-nav-wrapper {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.scroll-nav-item {
+  flex-shrink: 0;
+}
+
+.channels-nav-item {
+  display: block;
+  position: relative;
+  margin: 16px 6px;
+  margin-left: 6px;
+  overflow: hidden;
+  height: 32px;
+}
+
+.channel-svg {
+  fill: white;
+}
+
+.bbc1-bg, .bbc2-bg, .bbc3-bg, .bbc4-bg, .radio1-bg, .cbbc-bg, .cbeebies-bg, .cbeebies-icon2, .scotland-bg, .news-bg, .parliament-bg, .alba-bg, .s4c-bg {
+  fill: #141414;
+}
+
+.channel-svg:hover .bbc1-bg {
+  fill: #e8504b;
+}
+
+.channel-svg:hover .bbc2-bg {
+  fill: #10a88d;
+}
+
+.channel-svg:hover .bbc3-bg {
+  fill: #ff4c98;
+}
+
+.channel-svg:hover .bbc4-bg {
+  fill: #7831eb;
+}
+
+.channel-svg:hover .radio1-bg {
+  fill: #fff;
+}
+
+.radio1-icon {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .radio1-icon {
+  fill: #000;
+}
+
+.channel-svg:hover .cbbc-bg {
+  fill: #2a205c;
+}
+
+.cbbc-icon1 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbbc-icon1 {
+  fill: #f66c06;
+}
+
+.cbbc-icon2 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbbc-icon2 {
+  fill: #f63400;
+}
+
+.cbbc-icon3 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbbc-icon3 {
+  fill: #0089a9;
+}
+
+.cbbc-icon3 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbbc-icon3 {
+  fill: #f63400;
+}
+
+.cbbc-icon4 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbbc-icon4 {
+  fill: #00d2a9;
+}
+
+.cbbc-icon5 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbbc-icon5 {
+  fill: #ff2c9f;
+}
+
+.cbbc-icon6 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbbc-icon6 {
+  fill: #d31c6f;
+}
+
+.cbbc-icon7 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbbc-icon7 {
+  fill: #9ee500;
+}
+
+.channel-svg:hover .cbeebies-bg {
+  fill: #29c7ff;
+}
+
+.cbeebies-icon1 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbeebies-icon1 {
+  fill: #000;
+}
+
+.channel-svg:hover .cbeebies-icon2 {
+  fill: #ffe40f;
+}
+
+.cbeebies-icon3 {
+  fill: #FFFFFF;
+}
+
+.channel-svg:hover .cbeebies-icon3 {
+  fill: #4e2f90;
+}
+
+.channel-svg:hover .scotland-bg {
+  fill: #3c53fa;
+}
+
+.channel-svg:hover .news-bg {
+  fill: #eb0000;
+}
+
+.channel-svg:hover .parliament-bg {
+  fill: #eb0000;
+}
+
+.channel-svg:hover .alba-bg {
+  fill: #0096dc;
+}
+
+.channel-svg:hover .s4c-bg {
+  fill: #128d9c;
+}
+
+@media screen and (min-width: 600px) {
+  .rhs-container {
+    display: none;
+  }
+
+  .rhs-container.large {
+    display: flex;
+  }
+
+  .iplayer-nav-dd-item-container {
+    display: none;
+  }
+
+  .iplayer-nav-dd-item-container.large {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .tv-category-box {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .subnav-option-column {
+    flex-direction: row;
+  }
+
+  .categories-mini-column {
+    width: 50%;
+  }
+}
+
+@-moz-document url-prefix() {
+  .iplayer-logo {
+    margin-top: 6px;
+  }
+
+  .iplayer-menu-btn {
+    margin-top: 6px;
+  }
+}
