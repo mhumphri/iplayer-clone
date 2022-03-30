@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/iplayer-clone/static/css/main.073c9b0a.css",
+    "main.js": "/iplayer-clone/static/js/main.109f32d2.js",
+    "static/js/787.8dc670c3.chunk.js": "/iplayer-clone/static/js/787.8dc670c3.chunk.js",
+    "static/media/logo.svg": "/iplayer-clone/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/iplayer-clone/index.html",
+    "main.073c9b0a.css.map": "/iplayer-clone/static/css/main.073c9b0a.css.map",
+    "main.109f32d2.js.map": "/iplayer-clone/static/js/main.109f32d2.js.map",
+    "787.8dc670c3.chunk.js.map": "/iplayer-clone/static/js/787.8dc670c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.109f32d2.js"
+  ]
+}
